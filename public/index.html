@@ -53,6 +53,7 @@ MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mix
 // but it's recommended you remove it for production
 mixpanel.init('0604195fc6d63732cf174888608f5728'); 
 mixpanel.track('Landed');
+mixpanel.track_links("#cta a", "clicked_hero_cta", {"referrer": document.referrer});
 </script>
 
   <!-- ======= Header ======= -->
@@ -110,12 +111,6 @@ mixpanel.track('Landed');
             <a href="https://www.google.com/" class="download-btn"><i class="bx bxl-play-store"></i> Google Play</a>
             <a href="#" class="download-btn"><i class="bx bxl-apple"></i> App Store</a>
           </div>
-		
-		<script type="text/javascript">
-			mixpanel.track_links("#cta a", "clicked_hero_cta", {
-				"referrer": document.referrer
-			});
-		</script>
         </div>
         <div class="col-lg-6 d-lg-flex flex-lg-column align-items-stretch order-1 order-lg-2 hero-img" data-aos="fade-up">
           <img src="assets/img/hero-img.png" class="img-fluid" alt="">
