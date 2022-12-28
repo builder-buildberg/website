@@ -92,12 +92,18 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 d-lg-flex flex-lg-column justify-content-center align-items-stretch pt-5 pt-lg-0 order-2 order-lg-1" data-aos="fade-up">
-          <div>
+          <div id= "cta">
             <h1>Let's Get Crowded</h1>
             <h2>Ipsum dolor sit amet, tota senserit percipitur ius ut, usu et fastidii forensibus voluptatibus. His ei nihil feugait</h2>
             <a href="https://www.google.com/" class="download-btn"><i class="bx bxl-play-store"></i> Google Play</a>
             <a href="#" class="download-btn"><i class="bx bxl-apple"></i> App Store</a>
           </div>
+		
+		<script type="text/javascript">
+			mixpanel.track_links("#cta a", "clicked_hero_cta", {
+				"referrer": document.referrer
+			});
+		</script>
         </div>
         <div class="col-lg-6 d-lg-flex flex-lg-column align-items-stretch order-1 order-lg-2 hero-img" data-aos="fade-up">
           <img src="assets/img/hero-img.png" class="img-fluid" alt="">
@@ -106,11 +112,7 @@
     </div>
 
   </section><!-- End Hero -->
-<script type="text/javascript">
-    mixpanel.track_links("#hero a", "clicked_hero_cta", {
-        "referrer": document.referrer
-    });
-</script>
+
   <main id="main">
 
     <!-- ======= App Features Section ======= -->
